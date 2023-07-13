@@ -1,0 +1,24 @@
+kind: project
+metadata:
+  name: fraud-demo-pengwei
+  created: '2023-07-13T16:53:10.690000'
+spec:
+  params:
+    label_column: label
+  functions:
+  - url: hub://feature_selection
+    name: feature_selection
+  - url: hub://auto_trainer
+    name: train
+  - url: hub://v2_model_server
+    name: serving
+  workflows:
+  - path: workflow.py
+    name: main
+  artifacts: []
+  conda: ''
+  source: ''
+  desired_state: online
+  owner: PengWei
+status:
+  state: online
