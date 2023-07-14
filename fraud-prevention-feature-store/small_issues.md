@@ -1,7 +1,7 @@
 
 All the test is conducted at mlrun=1.3.3.
 
-#### version issue
+#### mlrun version issue
 
 Please make sure the remote server version and the client vision are aligned before you run the demo
 
@@ -22,3 +22,8 @@ apt-get install graphviz
 ```
 
 #### V3IO_API environment variable
+
+Before deploy the iguazio v3io endpoint. It complains about not getting the V3IO_API environment variable.
+
+
+
